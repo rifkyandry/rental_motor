@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#003366"
+    tools:context=".MainActivity">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:layout_margin="30dp"
+android:paddingTop="0dp">
+
+<TextView
+    android:id="@+id/textView4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:textSize="30dp"
+    android:fontFamily=""
+    android:textAlignment="center"
+    android:textStyle="bold"
+    android:text="WELCOME"
+    android:textColor="@android:color/white" /> <!-- Menambahkan warna teks putih -->
+
+</LinearLayout>
+
+<ImageView
+android:id="@+id/logo"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="center"
+android:layout_marginTop="40dp"
+android:contentDescription="Logo"
+android:src="@drawable/logorent3" />
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:layout_margin="100dp">
+
+<Button
+    android:id="@+id/login7"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Login"
+    android:backgroundTint="@color/primary"
+    android:layout_marginBottom="10dp"
+    android:onClick="login"
+    android:elevation="8dp"/>
+
+<Button
+    android:id="@+id/registeractivity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/white"
+    android:textColor="@color/primary"
+    android:onClick="registeractivity"
+    android:text="Register" />
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="or Login With"
+    android:gravity="center"
+    android:layout_marginTop="10dp"
+    android:textColor="@android:color/white"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="5dp">
+
+    <ImageView
+        android:id="@+id/google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/logogoogle" />
+
+    <ImageView
+        android:id="@+id/facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/logofacebook" />
+
+    <ImageView
+        android:id="@+id/twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/logotwitter" />
+</LinearLayout>
+</LinearLayout>
+
+    </LinearLayout>

@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    android:paddingTop="24dp">
+
+    <!-- Top Bar with Title and Back Button -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_marginBottom="16dp">
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/i_back"
+            android:contentDescription="Back"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:layout_alignParentLeft="true" />
+        <!-- Title Text: Pembayaran -->
+        <TextView
+            android:id="@+id/paymentTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pembayaran"
+            android:textSize="22sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <!-- Informasi Pemesanan -->
+    <TextView
+        android:id="@+id/pemesananInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informasi Pemesanan"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/black" />
+
+    <!-- Detail Motor -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginBottom="16dp">
+        <ImageView
+            android:id="@+id/motorImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/beatdelux"
+            android:layout_marginEnd="12dp" />
+        <TextView
+            android:id="@+id/motorNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beat Delux"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_vertical" />
+    </LinearLayout>
+
+    <!-- Jumlah Hari Rental -->
+    <TextView
+        android:id="@+id/jumlahHariText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jumlah Hari: 3 Hari"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Total Harga -->
+    <TextView
+        android:id="@+id/totalHargaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Harga: Rp. "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Metode Pembayaran -->
+    <TextView
+        android:id="@+id/metodePembayaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Metode Pembayaran"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/black" />
+
+    <!-- Pilihan Metode Pembayaran -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:layout_marginBottom="24dp">
+        <!-- Gopay -->
+        <ImageView
+            android:id="@+id/gopayIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icongopay"
+            android:layout_marginEnd="16dp" />
+        <!-- OVO -->
+        <ImageView
+            android:id="@+id/ovoIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/iconovo"
+            android:layout_marginEnd="16dp" />
+        <!-- Bank Transfer -->
+        <ImageView
+            android:id="@+id/danaIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/dana" />
+    </LinearLayout>
+
+    <!-- Input Detail Pembayaran -->
+    <EditText
+        android:id="@+id/paymentDetailsInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan nominal pembayaran"
+        android:visibility="gone" /> <!-- Di awal disembunyikan -->
+
+    <!-- Button Konfirmasi Pembayaran -->
+    <Button
+        android:id="@+id/confirmPaymentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Konfirmasi Pembayaran"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/primary"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone" /> <!-- Di awal disembunyikan -->
+
+</LinearLayout>

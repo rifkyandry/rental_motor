@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    android:paddingTop="24dp">
+
+    <!-- Top Bar with Title and Back & About Buttons -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_marginBottom="16dp">
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/i_back"
+            android:contentDescription="Back"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:layout_alignParentLeft="true" />
+        <!-- Title Text: RentalMotor -->
+        <TextView
+            android:id="@+id/dashboardTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RentMotor"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_centerInParent="true" />
+        <!-- About Button -->
+        <ImageButton
+            android:id="@+id/aboutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icons_about_us"
+            android:contentDescription="About"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <!-- Gambar Motor dengan Border dan Bayangan -->
+    <ImageView
+        android:id="@+id/imgmotor1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/beatdelux"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/img_border"
+        android:elevation="4dp" />
+
+    <!-- Nama Motor -->
+    <TextView
+        android:id="@+id/beat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beat Delux"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_marginBottom="4dp"
+        android:layout_gravity="center_horizontal"
+        android:letterSpacing="0.1" />
+
+    <!-- Tahun Rilis -->
+    <TextView
+        android:id="@+id/tahunmotor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tahun Rilis: 2024"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginBottom="4dp"
+        android:layout_gravity="center_horizontal"
+        android:letterSpacing="0.05" />
+
+    <!-- Kapasitas Mesin -->
+    <TextView
+        android:id="@+id/CCmotor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CC: 110cc"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center_horizontal"
+        android:letterSpacing="0.05" />
+
+    <!-- Harga Rental -->
+    <TextView
+        android:id="@+id/hargaRental"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Harga Sewa: Rp. 80.000/hari"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Jumlah Hari Rental -->
+    <TextView
+        android:id="@+id/jumlahHariLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jumlah Hari Rental"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/jumlahHariInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Jumlah Hari"
+        android:inputType="number"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+
+
+    <!-- Tombol Order Sekarang -->
+    <Button
+        android:id="@+id/orderButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Order Sekarang"
+        android:backgroundTint="@color/primary"
+        android:layout_marginBottom="15dp" />
+
+</LinearLayout>
